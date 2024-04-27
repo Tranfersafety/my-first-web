@@ -127,8 +127,10 @@ ul {
   p {
     font-size: 20px;
     color: gray;
+  }
+  #feature-p {
     margin-left: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 .container {
