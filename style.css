@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 a {
@@ -26,6 +26,9 @@ header {
   /* margin: 0 10px; */
   position: sticky;
   top: 0;
+  @media (max-width: 600px) {
+    position: relative;
+  }
 }
 .nav-bar {
   display: flex;
@@ -37,6 +40,11 @@ header {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .nav-left {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -44,11 +52,6 @@ header {
   .nav-right {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-  }
-  @media (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 }
 .nav-bar span {
@@ -64,6 +67,12 @@ ul {
   display: flex;
   flex-direction: row;
   margin: 1em;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   li {
     margin: 20px;
     :hover {
